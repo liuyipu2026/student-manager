@@ -1,0 +1,28 @@
+### 1. 查询所有学生（GET）
+GET http://localhost:8080/students
+
+### 2. 按学号查询单个学生（GET）
+GET http://localhost:8080/students/001
+
+### 3. 添加学生（POST）
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "id": "010",
+  "name": "王小二",
+  "age": 20
+}
+
+### 4. 修改学生（PUT）
+PUT http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "id": "010",
+  "name": "王大二",
+  "age": 21
+}
+
+### 5. 删除学生（DELETE）
+DELETE http://localhost:8080/students/010
